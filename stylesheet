@@ -1,0 +1,93 @@
+/* Common */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.background-container {
+    position: relative;
+    background-image: url('/data/images/pexels-joshsorenson-258215.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+/* Container Sections */
+.container-one,
+.container-two {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container-one {
+    background-color: rgba(255, 0, 0, 0.5);
+    /* Red with 50% opacity */
+}
+
+.container-two {
+    background-color: rgba(0, 0, 255, 0.5);
+    /* Blue with 50% opacity */
+    color: white;
+}
+
+/* Navbar -Hero */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black with 50% opacity */
+    color: white;
+    padding: 12px 24px;
+    /* Padding for spacing (12px top/bottom, 24px left/right) */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    /* Increase the font size of the brand name */
+}
+
+.navbar,
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-text {
+    /*  font-family: 'Oswald', sans-serif; */
+
+    color: white !important;
+    /* Change all text colors to white */
+}
+
+.navbar .nav-link:hover {
+    color: #e0e0e0 !important;
+    /* Optional: Change hover color to a lighter shade */
+}
+
+/*hero*/
+.hero {
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1em;
+    margin-top: 0px;
+    /* Adjust based on navbar height to prevent content overlap */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 0.5em 0 1em 0;
+    max-width: 600px;
+}
