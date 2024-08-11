@@ -1,238 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fishing PhotoBlog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .hero {
-            background: url('path-to-your-hero-image.jpg') no-repeat center center/cover;
-            color: white;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .navbar {
-            background-color: #333;
-            color: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            padding: 1em 0;
-            text-align: center;
-            display: none;
-            transition: all 0.3s ease-in-out;
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding-top: 2em; /* Add padding to account for the navbar */
-        }
-        .showcase {
-            background: url('path-to-your-image.jpg') no-repeat center center/cover;
-            color: white;
-            height: 400px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .showcase h1 {
-            font-size: 2.5em;
-        }
-        .cta {
-            margin: 2em 0;
-            text-align: center;
-        }
-        .cta button {
-            background-color: #333;
-            color: white;
-            padding: 1em 2em;
-            border: none;
-            cursor: pointer;
-        }
-        .features, .blog {
-            display: flex;
-            justify-content: space-around;
-            margin: 2em 0;
-        }
-        .feature, .blog-item {
-            background: white;
-            padding: 1em;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            flex: 1;
-            margin: 0 1em;
-            text-align: center;
-        }
-        .placeholder {
-            height: 200px;
-            background: #ddd;
-        }
-        .content {
-            background: white;
-            padding: 2em;
-            margin: 2em 0;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .contact {
-            background: #f4f4f4;
-            padding: 2em;
-            margin: 2em 0;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-        }
-        .contact h2 {
-            margin-bottom: 1em;
-        }
-        .contact form {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1em;
-        }
-        .contact form input, .contact form textarea {
-            padding: 1em;
-            margin: 0.5em 0;
-            width: 80%;
-            max-width: 500px;
-            border: 1px solid #ddd;
-        }
-        .contact form button {
-            background-color: #333;
-            color: white;
-            padding: 1em 2em;
-            border: none;
-            cursor: pointer;
-        }
-        .contact-info {
-            flex: 1;
-            padding: 1em;
-            text-align: left;
-        }
-        .contact-info h3 {
-            margin-top: 0;
-        }
-        .contact-info p {
-            margin: 0.5em 0;
-        }
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: relative;
-        }
-    </style>
+    <title>UnhappyFish</title>
+    <link rel="icon" sizes="32x32" href="path-to-logo" type=" image/png">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--Custom-->
+    <link rel="stylesheet" href="path-to-css">
 </head>
+
 <body>
-    <div class="hero">
-        <h1>Welcome to the Fishing PhotoBlog</h1>
-    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ipsume<b>ipsume</b></a>
 
-    <div class="navbar" id="navbar">
-        <h1>Fishing PhotoBlog</h1>
-    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="header" id="header">
-        <h1>Fishing PhotoBlog</h1>
-    </div>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">something</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page">something</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Somthing</a></li>
+                            <li><a class="dropdown-item" href="#">something</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
-    <div class="showcase">
-        <h1>Welcome to the Fishing PhotoBlog</h1>
-    </div>
+                <span class="navbar-text">
+                    <a class="nav-link" href="#">
+                        <b>Sign Up</b>
+                    </a>
 
-    <div class="container">
-        <div class="cta">
-            <button>Sign Up Now</button>
+            </div>
         </div>
+    </nav>
 
-        <section class="features">
-            <div class="feature">
-                <div class="placeholder">Placeholder for feature 1</div>
-                <h2>Upload Photos</h2>
-                <p>Share your fishing experiences with the community.</p>
-            </div>
-            <div class="feature">
-                <div class="placeholder">Placeholder for feature 2</div>
-                <h2>Rate Locations</h2>
-                <p>Rate and discover the best fishing spots.</p>
-            </div>
+    <!--hero-->
+    <section class="hero background-container">
+        <h1>Welcome to <b>ipsume</b></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, porro? Suscipit aliquid doloremque
+            dolorem repellat dicta, dolores explicabo! Fuga veritatis ratione mollitia sunt facilis, tempora minima ad
+            qui molestias placeat!</p>
+        <button id="readMoreButton" class="btn btn-secondary">Read More</button>
+    </section>
+
+    <main class="flex-grow-1">
+        <!--features-->
+        <section class="container-one">
+            <h2>Container One</h2>
+            <p>This is the first container with a light background color.</p>
         </section>
 
-        <section class="blog">
-            <div class="blog-item">
-                <div class="placeholder">Placeholder for blog 1</div>
-                <h2>User Stories</h2>
-                <p>Read and share stories from fellow fishers.</p>
-            </div>
-            <div class="blog-item">
-                <div class="placeholder">Placeholder for blog 2</div>
-                <h2>Fishing Manuals</h2>
-                <p>Learn new techniques and improve your skills.</p>
-            </div>
+        <section class="container-two">
+            <h2>Container Two</h2>
+            <p>This is the second container with a dark background color and white text.</p>
         </section>
+    </main>
 
-        <section class="content">
-            <h2>Additional Content Section</h2>
-            <p>This is a new section added to provide more information about the Fishing PhotoBlog.</p>
-        </section>
-
-        <section class="contact">
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <h3>Email:</h3>
-                <p>info@fishingphotoblog.com</p>
-                <h3>Phone:</h3>
-                <p>(123) 456-7890</p>
-                <h3>Address:</h3>
-                <p>123 Fishing Lane, Fishville, FL 12345</p>
-            </div>
-            <form>
-                <h2>Contact Us</h2>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2024 Fishing PhotoBlog. All rights reserved.</p>
-    </div>
-
-    <script>
-        window.addEventListener('scroll', function() {
-            var navbar = document.getElementById('navbar');
-            if (window.scrollY > window.innerHeight) {
-                navbar.style.display = 'block';
-            } else {
-                navbar.style.display = 'none';
-            }
-        });
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
 </html>
